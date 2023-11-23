@@ -1,4 +1,8 @@
 #Makefile
+extends:
+	'airbnb-base'
+  	'plugin:jest/recommended'
+
 install:
 	npm ci
 
@@ -7,3 +11,6 @@ brain-games:
 
 publish:
 	npm publish --dry-run
+
+lint:
+	npx eslint .

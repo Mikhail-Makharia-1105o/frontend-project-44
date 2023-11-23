@@ -1,5 +1,6 @@
 #!/usr/bin/env nodea
-import readlineSync from 'readline-sync';
-import gameStart from '../src/cli';
+import { gameStart } from '../src/cli.js';
+import gameEven from './brain-even.js';
 
 gameStart();
+gameEven();
