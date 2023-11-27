@@ -44,7 +44,7 @@ export default function gameCalc() {
             }
             break;
         default:
-            return 0;S
+            return;
     }
   }
   winState();

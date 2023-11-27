@@ -2,15 +2,15 @@ import readlineSync from 'readline-sync';
 
 import { failState, winState, gameStart } from '../src/index.js';
 
-function gcd(a,b) {
-    a = Math.abs(a);
-    b = Math.abs(b);
-    if (b > a) {var temp = a; a = b; b = temp;}
+function gcd(a, b) {
+    let newA = Math.abs(a);
+    let newB = Math.abs(b);
+    if (newB > newA) { const temp = newA; newA = newB; newB = temp; }
     while (true) {
-        if (b == 0) return a;
-        a %= b;
-        if (a == 0) return b;
-        b %= a;
+        if (newB === 0) return newA;
+        newA %= newB;
+        if (newA === 0) return newB;
+        newB %= newA;
     }
 }
 

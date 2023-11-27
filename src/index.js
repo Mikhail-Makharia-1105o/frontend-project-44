@@ -8,9 +8,9 @@ export function gameStart() {
 }
 
 export function failState() {
-    console.log(`Let's try again, ${name}!`);
-  }
-  
+  console.log(`Let's try again, ${name}!`);
+}
+
 export function winState() {
-    console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 }
