@@ -18,9 +18,9 @@ export default function gameCalc() {
     } else {
         sign = '*';
     }
+    userAnswer = readlineSync.question(`Question: ${a} ${sign} ${b} `);
     switch (sign) {
         case '+':
-            userAnswer = readlineSync.question(`Question: ${a} ${sign} ${b} `);
             if (+userAnswer !== (a + b)) {
                 console.log(`${userAnswer} is a wrong answer ;(. Correct answer was ${a + b}.`);
                 failState();
@@ -28,7 +28,6 @@ export default function gameCalc() {
             }
             break;
         case '-':
-            userAnswer = readlineSync.question(`Question: ${a} ${sign} ${b} `);
             if (+userAnswer !== (a - b)) {
                 console.log(`${userAnswer} is a wrong answer ;(. Correct answer was ${a - b}.`);
                 failState();
@@ -36,7 +35,6 @@ export default function gameCalc() {
             }
             break;
         case '*':
-            userAnswer = readlineSync.question(`Question: ${a} ${sign} ${b} `);
             if (+userAnswer !== (a * b)) {
                 console.log(`${userAnswer} is a wrong answer ;(. Correct answer was ${a * b}.`);
                 failState();
