@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 
 import { failState, winState, gameStart } from '../src/index.js';
+
 gameStart();
 export default function gameCalc() {
   console.log('What is the result of the expression?');

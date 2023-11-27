@@ -10,8 +10,7 @@ function gcd(a, b) {
         if (newB === 0) return newA;
         newA %= newB;
         if (newA === 0) return newB;
-        newB %= newA;
-    }
+        newB %= newA; }
 }
 
 gameStart();

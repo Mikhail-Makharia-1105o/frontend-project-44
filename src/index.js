@@ -16,10 +16,9 @@ export function winState() {
 }
 
 export function answerCheckingLogic(userAnswer, answer) {
-  if (userAnswer === 'no' && answer || userAnswer === 'yes' && !answer) {
+  if ((userAnswer === 'no' && answer) || (userAnswer === 'yes' && !answer)) {
     console.log(`${userAnswer} is a wrong answer ;(. Correct answer was '${userAnswer === 'yes' ? 'no' : 'yes'}'.`);
     failState();
     return 0;
-  }
-  return 1;
+  } return 1;
 }
