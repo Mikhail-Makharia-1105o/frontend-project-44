@@ -12,13 +12,13 @@ export default function gameCalc() {
     let sign = '';
     let userAnswer = '';
     if (c >= 0 && c <= 33) {
-        sign = '+';
+        sign = '+'
     } else if (c > 33 && c <= 66) {
-        sign = '-';
+        sign = '-'
     } else {
-        sign = '*';
+        sign = '*'
     }
-    switch (sign) {
+    switch(sign) {
         case '+':
             userAnswer = readlineSync.question(`Question: ${a} ${sign} ${b} `);
             if (+userAnswer !== (a + b)) {
@@ -43,8 +43,6 @@ export default function gameCalc() {
                 return;
             }
             break;
-        default:
-            return 0;S
     }
   }
   winState();
