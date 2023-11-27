@@ -29,5 +29,4 @@ export default function gameCalc() {
         }
     }
     winState();}
-
 gameCalc();
