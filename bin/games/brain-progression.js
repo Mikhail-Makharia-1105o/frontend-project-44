@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { failState, winState, gameStart } from '../src/index.js';
+import { failState, winState, gameStart } from '../../src/index.js';
 
 gameStart();
 export default function gameProgression() {

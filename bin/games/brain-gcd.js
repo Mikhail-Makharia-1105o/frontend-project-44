@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { failState, winState, gameStart } from '../src/index.js';
+import { failState, winState, gameStart } from '../../src/index.js';
 
 function gcd(a, b) {
     let newA = Math.abs(a);
