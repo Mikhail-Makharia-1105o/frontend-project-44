@@ -14,4 +14,3 @@ export function failState() {
 export function winState() {
     console.log(`Congratulations, ${name}!`);
 }
-  
