@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 
-import { failState, winState } from '../src/cli.js';
+import { gameStart } from '../src/cli.js';
+import { failState, winState } from '../src/index.js';
 
+gameStart();
 export default function gameEven() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
@@ -20,3 +22,5 @@ export default function gameEven() {
   }
   winState();
 }
+
+gameEven();

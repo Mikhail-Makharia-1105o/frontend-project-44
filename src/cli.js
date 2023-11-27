@@ -6,11 +6,3 @@ export function gameStart() {
   name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 }
-
-export function failState() {
-  console.log(`Let's try again, ${name}!`);
-}
-
-export function winState() {
-  console.log(`Congratulations, ${name}!`);
-}
