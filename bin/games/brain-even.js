@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { answerCheckingLogic, winState, gameStart } from '../src/index.js';
+import { answerCheckingLogic, winState, gameStart } from '../../src/index.js';
 
 gameStart();
 export default function gameEven() {
