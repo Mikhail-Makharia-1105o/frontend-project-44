@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 
 import { failState, winState, gameStart } from '../../src/index.js';

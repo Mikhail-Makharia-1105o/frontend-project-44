@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 
 import { winState, gameStart, answerCheckingLogic } from '../../src/index.js';
