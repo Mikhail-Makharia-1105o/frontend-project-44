@@ -15,6 +15,7 @@ export default function gameEven() {
     if (!(answerCheckingLogic(userAnswer, answer))) {
       return;
     }
+    console.log('Correct!');
   }
   winState();
 }

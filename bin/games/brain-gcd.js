@@ -27,6 +27,7 @@ export default function gameCalc() {
         failState();
         return;
     }
+    console.log('Correct!');
   }
   winState();
 }

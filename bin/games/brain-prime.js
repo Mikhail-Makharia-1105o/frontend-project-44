@@ -18,6 +18,7 @@ export default function gamePrime() {
         if (!(answerCheckingLogic(userAnswer, answer))) {
             return;
         }
+        console.log('Correct!');
     }
     winState();
 }

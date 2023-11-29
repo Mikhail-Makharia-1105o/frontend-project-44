@@ -22,6 +22,7 @@ export default function gameProgression() {
             failState();
             return;
         }
+        console.log('Correct!');
     }
     winState();
 }
