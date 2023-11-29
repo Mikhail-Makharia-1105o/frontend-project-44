@@ -10,10 +10,10 @@ for (let i = 0; i < primeNumbers.length; i += 1) {
     primeNumbers[i] = +primeNumbers[i];
 }
 export default function gamePrime() {
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     for (let i = 0; i < 3; i += 1) {
         const a = Math.floor(Math.random() * 110);
         const answer = primeNumbers.includes(a);
-        console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
         const userAnswer = readlineSync.question(`Question:  ${a} `);
         if (!(answerCheckingLogic(userAnswer, answer))) {
             return;
