@@ -18,7 +18,7 @@ export default function gameProgression() {
         progressionNumbers[randomIndex] = '...';
         const userAnswer = readlineSync.question(`Question: ${progressionNumbers[0]}, ${progressionNumbers[1]}, ${progressionNumbers[2]}, ${progressionNumbers[3]}, ${progressionNumbers[4]}, ${progressionNumbers[5]}, ${progressionNumbers[6]}, ${progressionNumbers[7]}, ${progressionNumbers[8]}, ${progressionNumbers[9]} `);
         if (+userAnswer !== missingNumber) {
-            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was ${missingNumber}.`);
+            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${missingNumber}'.`);
             failState();
             return;
         }

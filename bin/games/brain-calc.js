@@ -25,7 +25,7 @@ export default function gameCalc() {
         }
         const userAnswer = readlineSync.question(`Question: ${a} ${sign} ${b} `);
         if (+userAnswer !== answer) {
-            console.log(`'${+userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+            console.log(`'${+userAnswer}' is wrong answer ;(.  was '${answer}'.`);
             failState();
             return;
         }
