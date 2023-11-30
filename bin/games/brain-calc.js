@@ -3,10 +3,9 @@
 import readlineSync from 'readline-sync';
 
 import { failState, winState, gameStart } from '../../src/index.js';
-
-gameStart();
+const rules = 'What is the result of the expression?';
+gameStart(rules);
 export default function gameCalc() {
-  console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
         const a = Math.floor(Math.random() * 110);
         const b = Math.floor(Math.random() * 110);

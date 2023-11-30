@@ -4,9 +4,9 @@ import readlineSync from 'readline-sync';
 
 import { failState, winState, gameStart } from '../../src/index.js';
 
-gameStart();
+const rules = 'What number is missing in the progression?';
+gameStart(rules);
 export default function gameProgression() {
-    console.log('What number is missing in the progression?');
     for (let i = 0; i < 3; i += 1) {
         const progressionNumbers = [Math.floor(Math.random() * 110)];
         const progressionIncrement = Math.floor(Math.random() * 10 + 1);

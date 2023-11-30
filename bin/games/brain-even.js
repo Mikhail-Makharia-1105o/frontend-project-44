@@ -4,7 +4,8 @@ import readlineSync from 'readline-sync';
 
 import { answerCheckingLogic, winState, gameStart } from '../../src/index.js';
 
-gameStart();
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+gameStart(rules);
 export default function gameEven() {
   for (let i = 0; i < 3; i += 1) {
     const question = Math.floor((Math.random() * 110)) || 11;

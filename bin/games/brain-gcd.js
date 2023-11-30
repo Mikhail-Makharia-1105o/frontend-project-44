@@ -14,10 +14,9 @@ function gcd(a, b) {
         if (newA === 0) return newB;
         newB %= newA; }
 }
-
-gameStart();
+const rules = 'Find the greatest common divisor of given numbers.';
+gameStart(rules);
 export default function gameCalc() {
-  console.log('Find the greatest common divisor of given numbers. Type "1" if they have none.');
   for (let i = 0; i < 3; i += 1) {
     const a = Math.floor(Math.random() * 110);
     const b = Math.floor(Math.random() * 110);
