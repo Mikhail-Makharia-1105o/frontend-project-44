@@ -23,7 +23,7 @@ export default function gameCalc() {
     const b = Math.floor(Math.random() * 110);
     const userAnswer = readlineSync.question(`Question: ${a} ${b} `);
     if (+userAnswer !== gcd(a, b)) {
-        console.log(`'${userAnswer}' is a wrong answer ;(. Correct answer was '${gcd(a, b)}'.`);
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${gcd(a, b)}'.`);
         failState();
         return;
     }
