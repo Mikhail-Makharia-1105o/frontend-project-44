@@ -13,7 +13,7 @@ export default function gameProgression() {
     for (let j = 0; j < 9; j += 1) {
       progressionNumbers.push(progressionNumbers[j] + progressionIncrement);
     }
-    const randomIndex = Math.floor(Math.random() * 10) + 1;
+    const randomIndex = Math.floor(Math.random() * 10);
     const missingNumber = progressionNumbers[randomIndex];
     progressionNumbers[randomIndex] = '..';
     const userAnswer = readlineSync.question(
