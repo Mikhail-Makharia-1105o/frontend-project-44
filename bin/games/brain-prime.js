@@ -15,7 +15,7 @@ export default function gamePrime() {
     for (let i = 0; i < 3; i += 1) {
         const a = Math.floor(Math.random() * 110);
         const answer = primeNumbers.includes(a);
-        const userAnswer = readlineSync.question(`Question:  ${a} `);
+        const userAnswer = readlineSync.question(`Question: ${a} `);
         if (!(answerCheckingLogic(userAnswer, answer))) {
             return;
         }
